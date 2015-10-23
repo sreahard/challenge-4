@@ -1,5 +1,5 @@
 var DATA = {
-  title: 'Menu',
+  title: 'University of Montana: Student Directory',
   items: [
     { id: 1, name: 'John', email: 'John@u.mt.com', gpa: 4.0 },
     { id: 2, name: 'Sarah', email: 'Sarah@u.mt.com', gpa: 3.0 },
