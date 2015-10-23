@@ -15,22 +15,47 @@ var DATA = {
 
 var StudentPanels = React.createClass({
     render: function() {
+        var users = this.props.users.map(function(u){
+            if (u.gpa >= 3.5){
+            return (
+                <div className="col-md-4">
+                <div className="panel panel-default">
+                  <div className="panel-heading">
+                    <h3 className="panel-title">Student {u.id}</h3>
+                  </div>
+                  <div className="panel-body">
+                    <p>{u.name}</p>
+                    <p>{u.email}</p>
+                    <p>{u.gpa}</p>
+                  </div>
+                </div>
+                </div>
+                )
+        }
+        });
+
         return (
-				<div>
-					//Create each individual Student Panel
-				</div>
-        	);
+            <ul>
+            {users}
+            </ul>
+            )
     }
-});
+})
 
 var StudentBox = React.createClass({
     render: function() {
         return (
-				<div>
-					//Render Student List
+	<div className="container">
+        <div className="jumbotron">
+            <h4> {DATA.title}</h4>
+        </div>
+
+        <div className="row">
+					<StudentPanels users={DATA.items}/>
 				</div>
+                </div>
         	);
     }
 });
 
-// React.render(<StudentBox/>, document.body)
+React.render(<StudentBox/>, document.body)
