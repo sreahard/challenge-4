@@ -8,7 +8,9 @@
   "dependencies": {
     "body-parser": "^1.14.1",
     "express": "^4.13.3",
-    "mongo": "^0.1.0",
-    "mongoose": "^4.1.11"
+    "github-api": "^0.10.6",
+    "install": "^0.1.8",
+    "npm": "^3.3.9",
+    "twit": "^2.1.0"
   }
 }

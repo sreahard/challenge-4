@@ -1,16 +1,41 @@
+var DATA = {
+  title: 'Menu',
+  items: [
+    { id: 1, name: 'John', email: 'John@u.mt.com' gpa: 4.0 },
+    { id: 2, name: 'Sarah', email: 'Sarah@u.mt.com' gpa: 3.0 },
+    { id: 3, name: 'Paul', email: 'Paul@u.mt.com' gpa: 2.7 },
+    { id: 4, name: 'Emily', email: 'Emily@u.mt.com' gpa: 2.6 },
+    { id: 5, name: 'Derek', email: 'Derek@u.mt.com' gpa: 3.8 },
+    { id: 6, name: 'Kathy', email: 'Kathy@u.mt.com' gpa: 3.9 },
+    { id: 7, name: 'Brina', email: 'Brina@u.mt.com' gpa: 2.7 },
+    { id: 8, name: 'Clare', email: 'Clare@u.mt.com' gpa: 3.6 },
+    { id: 9, name: 'Mike', email: 'Mike@u.mt.com' gpa: 2.0 },
+  ]
+};
 
-//This should make a request to your animals api, and append each item
-//to the HTML id list
-(function(){
-$.getJSON( "YOUR URL GOES HERE", function( data ) {
-  var items = [];
-  $.each( data, function( key, val ) {
-
-    items.push( "<li>" + val.SOMETHING + val.SOMETHING +"</li>" );
-  });
-  $( "<ul/>", {
-    "class": "my-new-list",
-    html: items.join( "" )
-  }).appendTo( "#list" );
+var StudentPanels = React.createClass({
+    render: function() {
+        return (
+				<div>
+					//Create each individual Student Panel
+				</div>
+        	);
+    }
 });
-})();
+
+var GpaRankings = React.createClass({
+	
+})
+
+
+var StudentBlox = React.createClass({
+    render: function() {
+        return (
+				<div>
+					//Render Student List
+				</div>
+        	);
+    }
+});
+
+React.render(<StudentBlox/>, document.body)
