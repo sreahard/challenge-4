@@ -24,11 +24,11 @@ var StudentPanels = React.createClass({
 });
 
 var GpaRankings = React.createClass({
-	
+
 })
 
 
-var StudentBlox = React.createClass({
+var StudentBox = React.createClass({
     render: function() {
         return (
 				<div>
@@ -38,4 +38,4 @@ var StudentBlox = React.createClass({
     }
 });
 
-React.render(<StudentBlox/>, document.body)
+React.render(<StudentBox/>, document.body)
